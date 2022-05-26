@@ -17,7 +17,16 @@ router.use(
     },
   }),
 );
-
+router.use(
+  '/v1/history/:url',
+  createProxyMiddleware({
+    target: 'http://35.81.84.194:8080/v1/history',
+    changeOrigin: true,
+    pathRewrite: {
+      [`^/fio-backend/v1/history`]: '',
+    },
+  }),
+);
 router.use(
   '/:url',
   createProxyMiddleware({
