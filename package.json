@@ -1,7 +1,7 @@
 {
-  "name": "oracle",
+  "name": "@fioprotocol/fio-wrap-proxy",
   "version": "1.0.0",
-  "description": "Oracle for moving tokens and code to and from the FIO chain",
+  "description": "wrapping proxy prototype",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
